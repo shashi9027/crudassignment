@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { formFields } from "../config/fieldsSchema";
+import { formFields } from "../config/FieldsSchema";
 
 const schemaShape = {};
 
