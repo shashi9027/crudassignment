@@ -45,7 +45,6 @@ function App() {
   };
 
   const handleDelete = async (id) => {
-   
     try {
       await deleteUser(id);
       await loadUsers();
@@ -72,8 +71,6 @@ function App() {
          initialData={editingUser}
          onSubmit={handleCreateOrUpdate}
          onCancel={() => {setEditingUser(null), setOpen(false)}}
-        
-        
          />
       </SimpleDialog>
       <SimpleDialog open={openDeleteDialog}>
