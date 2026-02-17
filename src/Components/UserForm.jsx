@@ -67,11 +67,11 @@ export default function UserForm({ initialData, onSubmit, onCancel }) {
       ))}
 
       <button style={{background:"lightblue"}} type="submit">{initialData ? "Update" : "Create"}</button>
-      {initialData && (
+      
         <button type="button" onClick={onCancel} style={{ marginLeft: 10 }}>
           Cancel
         </button>
-      )}
+    
     </form>
   );
 }
